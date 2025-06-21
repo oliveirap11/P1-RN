@@ -1,20 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, Text, Image, TouchableOpacity, TextInput, ImageBackground } from 'react-native';
+import { styles } from './styles';
+import fundo from './assets/Fundo.png';
+import icon from './assets/icon.png'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+
+
+const App = () => {
+  return (      
+    <View style={styles.fundo}>     
+      <ImageBackground source={fundo} style={styles.fundoImg}>
+    <View>
+      <Image source={icon} style={styles.icon} />
+      <Text style={styles.textoIcon}>Olá, Patrick </Text>
+
+      
     </View>
+    </ImageBackground>
+
+    </View>
+
+    
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
