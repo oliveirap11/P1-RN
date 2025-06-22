@@ -1,7 +1,13 @@
 import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
-  fundo: {
-    flex:1     
+  perfil: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    height: 80,
+    backgroundColor: '#ff0000',
+    
+    
   },
   fundoImg: {
     width: '100%',
@@ -9,14 +15,18 @@ export const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
   icon: {
-    width: 50,
-    height: 50,
-    position: 'absolute',
+    width: 30,
+    height: 30,
     top: 20,
-    right: 20,
+    left: 10,
+    
   },
   textoIcon: {
     position: 'absolute',
+    color: '#fff',
+    fontSize: 15,
+    top: 50,
+    left: 45,
   },
 
 });

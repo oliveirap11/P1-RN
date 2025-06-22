@@ -7,11 +7,11 @@ import icon from './assets/icon.png'
 
 const App = () => {
   return (      
-    <View style={styles.fundo}>     
+    <View >     
       <ImageBackground source={fundo} style={styles.fundoImg}>
-    <View>
+    <View style={styles.perfil}>
       <Image source={icon} style={styles.icon} />
-      <Text style={styles.textoIcon}>Olá, Patrick </Text>
+      <Text style={styles.textoIcon}>Olá, Patrick! </Text>
 
       
     </View>
