@@ -1,30 +1,29 @@
 import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
-  perfil: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    height: 80,
-    backgroundColor: '#ff0000',    
-  },  
   fundoImg: {
     width: '100%',
     height: '100%',
     paddingBottom: 45,   
   },
+  usuario: {        
+    height: 80,
+    backgroundColor: '#f9133c',
+    justifyContent: 'flex-end',
+    paddingBottom: 10,
+    paddingHorizontal: 8,       
+  },  
+  
   icon: {
-    width: 30,
-    height: 30,
-    top: 20,
-    left: 10,
+    flexDirection: 'row',
+    alignItems: 'center',    
             
   },
   textoIcon: {
     position: 'absolute',
     color: '#fff',
     fontSize: 15,
-    top: 50,
-    left: 45,
+    top: 48,
+    left: 35,
   },
   logoContainer: {    
     justifyContent: 'center',
@@ -46,10 +45,11 @@ export const styles = StyleSheet.create({
     marginTop: 250,
     alignItems: 'center',
   },
-  ButtonText: {
+  textLocalizacao: {
     color: '#fff',
     fontSize: 16,
-  },
+    textAlign: 'center',
+  },  
   containerButton: {    
     justifyContent: 'center',
     alignItems: 'center', 
@@ -76,9 +76,25 @@ export const styles = StyleSheet.create({
     backgroundColor: '#fff',
     marginLeft: 10,
   },
-  buttonText: {
+  textButton: {
     color: '#fff',    
     fontSize: 16,    
+  },
+   barra: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    backgroundColor: '#f9133c',
+    paddingVertical: 10,
+    paddingBottom: 15,
+    marginTop: 220,
+  },
+  buttonBarra: {
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 12,
+    marginTop: 2,
   },
 
 });
